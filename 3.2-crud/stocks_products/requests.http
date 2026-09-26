@@ -1,0 +1,32 @@
+### Получить список товаров
+GET http://localhost:8000/api/v1/products/
+
+
+### Создать товар
+POST http://localhost:8000/api/v1/products/
+Content-Type: application/json
+
+{
+    "title": "Ноутбук",
+    "description": "Тестовый товар"
+}
+
+
+### Получить список складов
+GET http://localhost:8000/api/v1/stocks/
+
+
+### Создать склад
+POST http://localhost:8000/api/v1/stocks/
+Content-Type: application/json
+
+{
+    "address": "Москва, ул. Тестовая, 1",
+    "positions": [
+        {
+            "product": 1,
+            "quantity": 10,
+            "price": "50000.00"
+        }
+    ]
+}
