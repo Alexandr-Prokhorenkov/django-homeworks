@@ -1,9 +1,40 @@
-# CRUD
+# Stocks Products — Django REST API
 
-Необходимо выполнить и предоставить на проверку задачу:
+REST API для управления товарами и складами на Django REST Framework.
 
-[Склады и товары](./stocks_products).
+Проект запускается в Docker-контейнере и использует SQLite вместо PostgreSQL.
 
-Работа должна соответствовать принятому [стилю оформления кода](https://github.com/netology-code/codestyle/tree/master/python).
+## Технологии
 
-Любые вопросы по решению задач задавайте в чате учебной группы.
+- Python 3.10
+- Django
+- Django REST Framework
+- SQLite
+- Docker
+
+## Структура API
+
+Основной адрес API:
+
+http://localhost:8000/api/v1/
+
+Доступные endpoints:
+
+- GET/POST /api/v1/products/
+- GET/POST /api/v1/stocks/
+
+## Требования
+
+Для запуска проекта необходимо установить:
+
+- Docker
+- Git
+
+PostgreSQL для запуска проекта не требуется.
+
+## Сборка Docker image
+
+Перейдите в корневую директорию проекта, где находится Dockerfile, и выполните:
+
+```bash
+docker build -t stocks-products .
