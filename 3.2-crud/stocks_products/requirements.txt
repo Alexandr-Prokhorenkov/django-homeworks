@@ -1,2 +1,4 @@
-django
+Django==3.2.2
 djangorestframework
+psycopg2-binary
+gunicorn
